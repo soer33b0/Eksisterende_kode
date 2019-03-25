@@ -25,7 +25,7 @@ namespace RustVognKalender
                 "Slet Rustvogn",
                 "Afslut program"
             };
-        }
+        
 
         
 
@@ -187,7 +187,7 @@ namespace RustVognKalender
                     bool ans = BooleanChoice();
                     return ans;
                 }
-            }
+        }
 
 
 
@@ -255,7 +255,7 @@ namespace RustVognKalender
                 Console.Clear();
                 return "";
             }
-        }
+        
     }
 }
-}
+
