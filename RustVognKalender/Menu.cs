@@ -8,17 +8,14 @@ namespace RustVognKalender
 {
     class Menu
     {
-            private static int index = 0;
-            {
-                Controller c = new Controller();
+        private static int index = 0;
+           
+        Controller c = new Controller();
 
-        internal static void ShowMenu()
+        public void ShowMenu()
         {
-            throw new NotImplementedException();
-        }
-
-        // Create a list of menu items
-        List<string> menuItems = new List<string>() {
+            // Create a list of menu items
+            List<string> menuItems = new List<string>() {
                 "Opret Booking",
                 "Rediger Booking",
                 "Slet Booking",
@@ -28,6 +25,9 @@ namespace RustVognKalender
                 "Slet Rustvogn",
                 "Afslut program"
             };
+        }
+
+        
 
 
 
