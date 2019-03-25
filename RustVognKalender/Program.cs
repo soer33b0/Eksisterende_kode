@@ -8,7 +8,13 @@ namespace Console_Menu
     {
         private static void Main(string[] args)
         {
+            Program myProgram = new Program();
+            myProgram.Run();
+        }
 
+        private void Run()
+        {
+            Menu.ShowMenu();
         }
     }
 }
