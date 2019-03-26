@@ -1,0 +1,28 @@
+use A_DB30_2018
+
+drop table if exists CALENDER_ENTRY
+drop table if exists HEARSE
+
+
+CREATE TABLE HEARSE
+	(
+	SURROGATE_KEY	int		identity(1,1) not null,
+	PRIORITY_		int		not null
+	CONSTRAINT HEARSE_PK PRIMARY KEY (SURROGATE_KEY)
+	);
+
+CREATE TABLE CALENDER_ENTRY
+	(
+	SURROGATE_KEY	int				identity(1,1) not null,
+	START_AT		datetime2		not null,
+	END_AT			datetime2		not null,
+	VEHICLE			int				null,
+	AT_ADDRESS		nvarchar(50)	not null,
+	COMMENT			nvarchar(250)	null,
+	CONSTRAINT	CALENDER_ENTRY_PK	PRIMARY KEY (SURROGATE_KEY),
+	);
+
+ALTER TABLE CALENDER_ENTRY
+	WITH NOCHECK ADD CONSTRAINT ENTRY_VEHICLE_FK	FOREIGN KEY (VEHICLE)
+		REFERENCES HEARSE (SURROGATE_KEY)
+			ON UPDATE CASCADE
