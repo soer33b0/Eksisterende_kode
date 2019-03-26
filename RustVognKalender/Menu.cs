@@ -25,11 +25,6 @@ namespace RustVognKalender
                 "Slet Rustvogn",
                 "Afslut program"
             };
-        
-
-        
-
-
 
                 // Startup skal køres først
                 c.StartUp();
@@ -114,22 +109,17 @@ namespace RustVognKalender
                         Console.WriteLine("Indtast rustvognens prioritet.");
                         string hearsePrio = Console.ReadLine();
 
-
-
                         Console.WriteLine("");
                         Console.WriteLine("========== Rustvogn blev prioriteret ==========");
                         Console.WriteLine("");
                         IntermissionToMenu();
                         Console.Clear();
-
                     }
                     else if (selectedMenuItem == "Rediger Rustvogn")
                     {
                         Console.Clear();
                         Console.WriteLine("Indtast prioriteten pEden rustvogn som skal redigeres.");
                         string hearsePrio = Console.ReadLine();
-
-
 
                         Console.WriteLine("");
                         Console.WriteLine("========== Rustvogn blev redigeret ==========");
@@ -142,8 +132,6 @@ namespace RustVognKalender
                         Console.Clear();
                         Console.WriteLine("Indtast prioriteten pEden rustvogn som skal fjernes.");
                         string hearsePrio = Console.ReadLine();
-
-
 
                         Console.WriteLine("");
                         Console.WriteLine("========== Rustvogn blev slettet ==========");
@@ -158,19 +146,11 @@ namespace RustVognKalender
                     }
                 }
 
-
-
-
-
                 void IntermissionToMenu()
                 {
                     Console.WriteLine("Vender tilbage til hovedmenuen om 3 sekunder...");
                     System.Threading.Thread.Sleep(3000);
                 }
-
-
-
-
 
                 bool BooleanChoice()
                 {
@@ -189,11 +169,6 @@ namespace RustVognKalender
                 }
         }
 
-
-
-
-
-
             private static string DrawMenu(List<string> items)
             {
                 // for loop, for counting the items in the list
@@ -205,7 +180,6 @@ namespace RustVognKalender
                         Console.ForegroundColor = ConsoleColor.Black;
 
                         Console.WriteLine(items[i]);
-
                     }
                     else
                     {
@@ -213,10 +187,6 @@ namespace RustVognKalender
                     }
                     Console.ResetColor();
                 }
-
-
-
-
 
                 // Add functionality to the up, down and enter keys
                 ConsoleKeyInfo ckey = Console.ReadKey();
@@ -248,14 +218,9 @@ namespace RustVognKalender
 
                 }
 
-
-
-
-
                 Console.Clear();
                 return "";
             }
-        
     }
 }
 
