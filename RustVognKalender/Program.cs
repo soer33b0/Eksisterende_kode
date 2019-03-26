@@ -4,8 +4,10 @@ using System.Collections.Generic;
 
 namespace Console_Menu
 {
+    
     class Program
     {
+        Menu menu = new Menu();
         private static void Main(string[] args)
         {
             Program myProgram = new Program();
@@ -14,7 +16,7 @@ namespace Console_Menu
 
         private void Run()
         {
-            Menu.ShowMenu();
+            menu.ShowMenu();
         }
     }
 }
