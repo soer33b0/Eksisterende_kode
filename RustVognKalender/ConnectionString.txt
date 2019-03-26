@@ -1,1 +1,1 @@
-﻿Server=EALSQL1.eal.local;Database=B_DB13_2018;User Id=B_STUDENT13;Password=B_OPENDB13;
+﻿Server=EALSQL1.eal.local;Database=A_DB30_2018;User Id=A_STUDENT30;Password=A_OPENDB30;
